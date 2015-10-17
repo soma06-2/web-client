@@ -1,0 +1,64 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>블라블라에 대한 요약</h1>
+        </div>
+        <div class="col-sm-8">
+            <div class="graph" style="width: 960px; height: 450px;"></div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="alert alert-dismissable alert-info">
+                        <h3>긍정 의견</h3>
+                        <ul>
+                            <li>리뷰 1</li>
+                            <li>리뷰 1</li>
+                            <li>리뷰 1</li>
+                            <li>리뷰 1</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="alert alert-dismissable alert-danger">
+                        <h3>부정 의견</h3>
+                        <ul>
+                            <li>리뷰 1</li>
+                            <li>리뷰 1</li>
+                            <li>리뷰 1</li>
+                            <li>리뷰 1</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="well">
+                <h3>상품 정보</h3>
+                네이버 등
+            </div>
+            <div class="well">
+                넣을거 뭐있지..
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>의견 카테고라이징</h1>
+        </div>
+        <div class="col-sm-3">
+            <ul>
+                <li ng-repeat="p in [1, 2, 3, 4, 5, 6, 7, 8, 9]">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Checkbox {{p}}
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-sm-9">
+            <div class="well well-sm" ng-repeat="p in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 111,221,34,23423,423,532,52,523,2,532,423] track by $index">
+                <span class="text-info">긍정 의견</span>Look, I'm in a small well! <span class="text-danger">부정 의견</span>
+            </div>
+        </div>
+    </div>
+</div>
