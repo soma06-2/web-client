@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>'{{vm.word}}'에 대한 검색결과</h1>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" ui-sref="summary({
+                type: 'post',
+                entityId: vm.word,
+            })">
+                <div class="card-height-indicator"></div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <h3>{{vm.word}}에 대한 네이버 블로그 포스트 분석</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4" ng-repeat="product in vm.products track by $index">
+            <div class="card" ui-sref="summary({
+                type: 'product',
+                entityId: product.productId
+            })">
+                <div class="card-height-indicator"></div>
+                <div class="card-content">
+                    <div class="card-image">
+                        <img ng-src={{product.image}}>
+                    </div>
+                    <div class="card-body">
+                        <h3>{{product.title}}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
